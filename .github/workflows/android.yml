@@ -22,7 +22,7 @@ jobs:
         id: android_keystore_file
         uses: timheuer/base64-to-file@v1
         with:
-          fileName: 'my.keystore'
+          fileName: 'debug.keystore'
           encodedString: ${{ secrets.GLUON_ANDROID_KEYSTORE_BASE64 }}
 
       - name: Gluon License
